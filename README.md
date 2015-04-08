@@ -1,0 +1,2 @@
+# stupidbenchmark
+Stupid Benchmark
