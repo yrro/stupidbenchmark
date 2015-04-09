@@ -38,6 +38,16 @@ $ bench_mem
 2.18 megabytes per microsecond (3.74s user, 26.26s sys, 30.00s total)
 ```
 
+### ASUSTeK M5A78L-M/USB3
+AMD Athlon(tm) II X3 460 Processor
+[1182](http://www.cpubenchmark.net/cpu.php?cpu=AMD+Athlon+II+X3+460)
+```sh
+$ bench_cpu 
+446.91 loops per nanosecond (22.36s user, 0.02s sys, 22.38s total)
+$ bench_mem 
+1.71 megabytes per microsecond (13.73s user, 24.50s sys, 38.24s total)
+```
+
 ### HP ProLiant BL460c Gen8
 Intel(R) Xeon(R) CPU E5-2680 0 @ 2.70GHz
 [1664](http://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+E5-2680+%40+2.70GHz)
