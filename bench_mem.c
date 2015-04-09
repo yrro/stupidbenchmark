@@ -18,18 +18,19 @@
  */
 
 #include <stdio.h>
-#include <time.h>
+#include <sys/time.h>
+#include <sys/resource.h>
 #include <stdlib.h>
 #include <string.h>
 
 int main(void) {
-        clock_t t1, t2;
-        long double elapsed;
+        struct rusage startusage, endusage;
+        long double utime, stime, ttime;
         long double rate;
         int a, b;
 	void *ptr[1024];
 
-        t1 = clock();
+        getrusage(RUSAGE_SELF, &startusage);
         for (a = 0; a < 64; a++) {
                for (b = 0; b < 1024; b++) {
                         ptr[b] = malloc(1048576); 
@@ -39,10 +40,23 @@ int main(void) {
                         free(ptr[b]);
                 }
         }
-        t2 = clock();
-        elapsed = ((long double)t2 - (long double)t1) / CLOCKS_PER_SEC;
-        rate =  65536 / (elapsed * 1000);
-        printf("%.6Lf megabytes per microsecond (%.1Lf seconds)\n", rate, elapsed);
+        getrusage(RUSAGE_SELF, &endusage);
+
+        utime =      (long double)endusage.ru_utime.tv_sec
+                +   ((long double)endusage.ru_utime.tv_usec / 1000000)
+                -  (long double)startusage.ru_utime.tv_sec
+                + ((long double)startusage.ru_utime.tv_usec / 1000000);
+
+        stime =      (long double)endusage.ru_stime.tv_sec
+                +   ((long double)endusage.ru_stime.tv_usec / 1000000)
+                -  (long double)startusage.ru_stime.tv_sec
+                + ((long double)startusage.ru_stime.tv_usec / 1000000);
+        ttime = utime + stime;
+
+        rate =  65536 / (ttime * 1000);
+        printf("%.2Lf megabytes per microsecond ", rate);
+        printf("(%.2Lfs user, %.2Lfs sys, %.2Lfs total)\n",
+        utime, stime, ttime);
 
         return 0;
 }

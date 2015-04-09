@@ -18,24 +18,38 @@
  */
 
 #include <stdio.h>
-#include <time.h>
+#include <sys/time.h>
+#include <sys/resource.h>
 
 int main(void) {
-        clock_t t1, t2;
-        long double elapsed;
+        struct rusage startusage, endusage;
+        long double utime, stime, ttime;
         long double rate;
         int a, b;
 
-        t1 = clock();
+        getrusage(RUSAGE_SELF, &startusage);
         for (a = 0; a < 100000; a++) {
                 for (b = 0; b < 100000; b++) {
                         ;
                 }
         }
-        t2 = clock();
-        elapsed = ((long double)t2 - (long double)t1) / CLOCKS_PER_SEC;
-        rate = 10000000000 / (elapsed * 1000 * 1000);
-        printf("%.3Lf loops per nanosecond (%.1Lf seconds)\n", rate, elapsed);
+        getrusage(RUSAGE_SELF, &endusage);
+
+        utime =      (long double)endusage.ru_utime.tv_sec
+                +   ((long double)endusage.ru_utime.tv_usec / 1000000)
+                -  (long double)startusage.ru_utime.tv_sec
+                + ((long double)startusage.ru_utime.tv_usec / 1000000);
+
+        stime =      (long double)endusage.ru_stime.tv_sec
+                +   ((long double)endusage.ru_stime.tv_usec / 1000000)
+                -  (long double)startusage.ru_stime.tv_sec
+                + ((long double)startusage.ru_stime.tv_usec / 1000000);
+        ttime = utime + stime;
+
+        rate = 10000000000 / (ttime * 1000 * 1000);
+        printf("%.2Lf loops per nanosecond ", rate);
+        printf("(%.2Lfs user, %.2Lfs sys, %.2Lfs total)\n",
+                utime, stime, ttime);
 
         return 0;
 }
