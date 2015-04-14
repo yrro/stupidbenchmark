@@ -88,6 +88,16 @@ $ bench_mem
 1.79 megabytes per microsecond (4.64s user, 31.87s sys, 36.51s total)
 ```
 
+### LENOVO ThinkPad X220
+Intel(R) Core(TM) i5-2520M CPU @ 2.50GHz
+[1500](http://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-2520M+%40+2.50GHz)
+```sh
+$ bench_cpu 
+381.97 loops per nanosecond (26.17s user, 0.01s sys, 26.18s total)
+$ bench_mem 
+3.16 megabytes per microsecond (3.71s user, 17.06s sys, 20.77s total)
+```
+
 ### Dell OptiPlex 745
 Intel(R) Core(TM)2 CPU          6400  @ 2.13GHz
 [797](http://www.cpubenchmark.net/cpu.php?cpu=Intel+Core2+Duo+E6400+%40+2.13GHz)
