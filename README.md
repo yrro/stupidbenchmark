@@ -126,6 +126,13 @@ $ bench_cpu
 246.42 loops per nanosecond (40.57s user, 0.01s sys, 40.58s total)
 ```
 
+### Raspbery Pi 3
+ARMv7 Processor rev 4 (v7l)
+```sh
+$ bench_cpu 
+171.29 loops per nanosecond (58.38s user, 0.00s sys, 58.38s total)
+```
+
 ### Raspbery Pi 2
 ARMv7 Processor rev 5 (v7l)
 ```sh
