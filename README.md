@@ -8,6 +8,16 @@ Stupid Benchmark is a small suite of programs to do stupid benmarks. I created t
 
 ## Sample Runs
 
+### LENOVO ThinkPad P51
+Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+[2012](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-7700HQ+%40+2.80GHz&id=2906)
+```
+$ ./bench_cpu 
+676.81 loops per nanosecond (14.78s user, 0.00s sys, 14.78s total)
+$ ./bench_mem 
+3.20 megabytes per microsecond (3.77s user, 16.71s sys, 20.48s total)
+```
+
 ### MSI Z77A-GD55 (MS-7751)
 Intel(R) Core(TM) i5-3570K CPU @ 3.40GHz
 [2029](http://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-3570K+%40+3.40GHz)
