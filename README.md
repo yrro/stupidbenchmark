@@ -28,6 +28,16 @@ $ bench_mem
 4.05 megabytes per microsecond (3.34s user, 12.84s sys, 16.18s total)
 ```
 
+### LENOVO ThinkPad P50
+Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
+[1883](https://www.cpubenchmark.net/cpu_lookup.php?cpu=Intel+Core+i7-6820HQ+%40+2.70GHz&id=2659)
+```sh
+$ bench_cpu
+602.78 loops per nanosecond (16.58s user, 0.01s sys, 16.59s total)
+$ bench_mem
+2.40 megabytes per microsecond (8.18s user, 19.12s sys, 27.30s total)
+```
+
 ### IBM Flex System x240 Compute Node -[8737T3M]-
 Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz
 [1607](http://www.cpubenchmark.net/cpu.php?cpu=Intel+Xeon+E5-2650+v2+%40+2.60GHz)
