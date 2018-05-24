@@ -138,6 +138,14 @@ $ bench_mem
 1.06 megabytes per microsecond (6.18s user, 55.87s sys, 62.04s total)
 ```
 
+### ASUS Transformer Book T100TA
+Intel(R) Atom(TM) CPU  Z3740  @ 1.33GHz
+[371](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Atom+Z3740+%40+1.33GHz&id=2059)
+$ bench_cpu
+252.23 loops per nanosecond (39.65s user, 0.00s sys, 39.65s total)
+$ bench_mem
+0.72 megabytes per microsecond (9.75s user, 81.24s sys, 90.99s total)
+
 ### Sony VGN-S5HP_B
 Intel(R) Pentium(R) M processor 1.73GHz
 [518](http://www.cpubenchmark.net/cpu.php?cpu=Intel+Pentium+M+1.73GHz)
