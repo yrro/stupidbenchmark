@@ -10,7 +10,7 @@ Stupid Benchmark is a small suite of programs to do stupid benmarks. I created t
 
 ### LENOVO ThinkPad P51
 Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
-[2012](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-7700HQ+%40+2.80GHz&id=2906)
+[2012](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-7700HQ+%40+2.80GHz)
 ```
 $ ./bench_cpu 
 676.81 loops per nanosecond (14.78s user, 0.00s sys, 14.78s total)
@@ -30,7 +30,7 @@ $ bench_mem
 
 ### LENOVO ThinkPad P50
 Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
-[1883](https://www.cpubenchmark.net/cpu_lookup.php?cpu=Intel+Core+i7-6820HQ+%40+2.70GHz&id=2659)
+[1883](https://www.cpubenchmark.net/cpu_lookup.php?cpu=Intel+Core+i7-6820HQ+%40+2.70GHz)
 ```sh
 $ bench_cpu
 602.78 loops per nanosecond (16.58s user, 0.01s sys, 16.59s total)
@@ -140,7 +140,7 @@ $ bench_mem
 
 ### ASUS Transformer Book T100TA
 Intel(R) Atom(TM) CPU  Z3740  @ 1.33GHz
-[371](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Atom+Z3740+%40+1.33GHz&id=2059)
+[371](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Atom+Z3740+%40+1.33GHz)
 $ bench_cpu
 252.23 loops per nanosecond (39.65s user, 0.00s sys, 39.65s total)
 $ bench_mem
