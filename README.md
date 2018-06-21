@@ -48,15 +48,14 @@ $ bench_mem
 4.05 megabytes per microsecond (3.34s user, 12.84s sys, 16.18s total)
 ```
 
-### Toshiba X30
-*awful* performance... stuck in low power states?
+### Toshiba Portégé X30-D
 Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
 [1731](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-7200U+%40+2.50GHz)
 ```sh
 $ bench_cpu
-60.81 loops per nanosecond (164.43s user, 0.01s sys, 164.44s total)
+553.93 loops per nanosecond (18.05s user, 0.00s sys, 18.05s total)
 $ bench_mem
-0.29 megabytes per microsecond (31.37s user, 191.68s sys, 223.05s total)
+2.64 megabytes per microsecond (4.44s user, 20.39s sys, 24.83s total)
 ```
 
 ### IBM Flex System x240 Compute Node -[8737T3M]-
