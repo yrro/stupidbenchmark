@@ -118,6 +118,16 @@ $ bench_mem
 3.16 megabytes per microsecond (3.71s user, 17.06s sys, 20.77s total)
 ```
 
+### A workstation
+Intel(R) Core(TM) i5 CPU 750 @ 2.67GHz
+[1140](https://www.cpubenchmark.net/cpu_lookup.php?cpu=Intel+Core+i5-750+%40+2.67GHz)
+```sh
+$ bench_cpu
+360.11 loops per nanosecond (24.77s user, 3.00s sys, 27.77s total)
+$ bench_mem
+0.91 megabytes per microsecond (26.13s user, 45.64s sys, 71.77s total)
+```
+
 ### Dell OptiPlex 745
 Intel(R) Core(TM)2 CPU          6400  @ 2.13GHz
 [797](http://www.cpubenchmark.net/cpu.php?cpu=Intel+Core2+Duo+E6400+%40+2.13GHz)
