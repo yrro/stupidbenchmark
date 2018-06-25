@@ -48,7 +48,8 @@ $ bench_mem
 4.05 megabytes per microsecond (3.34s user, 12.84s sys, 16.18s total)
 ```
 
-### Toshiba Portégé X30-D
+### Toshiba Portégé X30-D-10M
+`dmi:bvnTOSHIBA:bvrVersion3.00:bd02/23/2018:svnTOSHIBA:pnPORTEGEX30-D:pvrPT272E-00N00TEN:rvnTOSHIBA:rn10PCBA3:rvrVersionA0:cvnTOSHIBA:ct10:cvrVersion1.0:`
 Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
 [1731](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-7200U+%40+2.50GHz)
 ```sh
