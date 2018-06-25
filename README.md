@@ -29,6 +29,7 @@ $ bench_mem
 ```
 
 ### LENOVO ThinkPad P50
+`dmi:bvnLENOVO:bvrN1EET77W(1.50):bd03/28/2018:svnLENOVO:pn20EQA063UK:pvrThinkPadP50:rvnLENOVO:rn20EQA063UK:rvrSDK0J40697WIN:cvnLENOVO:ct10:cvrNone:`
 Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
 [1883](https://www.cpubenchmark.net/cpu_lookup.php?cpu=Intel+Core+i7-6820HQ+%40+2.70GHz&id=2659)
 ```sh
