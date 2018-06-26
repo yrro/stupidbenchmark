@@ -10,7 +10,7 @@ Stupid Benchmark is a small suite of programs to do stupid benmarks. I created t
 
 ### LENOVO ThinkPad P51
 Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
-[2012](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-7700HQ+%40+2.80GHz&id=2906)
+[2012](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i7-7700HQ+%40+2.80GHz)
 ```
 $ ./bench_cpu 
 676.81 loops per nanosecond (14.78s user, 0.00s sys, 14.78s total)
@@ -30,7 +30,7 @@ $ bench_mem
 
 ### LENOVO ThinkPad P50
 Intel(R) Core(TM) i7-6820HQ CPU @ 2.70GHz
-[1883](https://www.cpubenchmark.net/cpu_lookup.php?cpu=Intel+Core+i7-6820HQ+%40+2.70GHz&id=2659)
+[1883](https://www.cpubenchmark.net/cpu_lookup.php?cpu=Intel+Core+i7-6820HQ+%40+2.70GHz)
 ```sh
 $ bench_cpu
 602.78 loops per nanosecond (16.58s user, 0.01s sys, 16.59s total)
@@ -46,6 +46,17 @@ $ bench_cpu
 580.72 loops per nanosecond (17.22s user, 0.00s sys, 17.22s total)
 $ bench_mem 
 4.05 megabytes per microsecond (3.34s user, 12.84s sys, 16.18s total)
+```
+
+### Toshiba Portégé X30-D-10M
+`dmi:bvnTOSHIBA:bvrVersion3.00:bd02/23/2018:svnTOSHIBA:pnPORTEGEX30-D:pvrPT272E-00N00TEN:rvnTOSHIBA:rn10PCBA3:rvrVersionA0:cvnTOSHIBA:ct10:cvrVersion1.0:`
+Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+[1731](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-7200U+%40+2.50GHz)
+```sh
+$ bench_cpu
+553.93 loops per nanosecond (18.05s user, 0.00s sys, 18.05s total)
+$ bench_mem
+2.64 megabytes per microsecond (4.44s user, 20.39s sys, 24.83s total)
 ```
 
 ### IBM Flex System x240 Compute Node -[8737T3M]-
@@ -150,7 +161,7 @@ $ bench_mem
 
 ### ASUS Transformer Book T100TA
 Intel(R) Atom(TM) CPU  Z3740  @ 1.33GHz
-[371](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Atom+Z3740+%40+1.33GHz&id=2059)
+[371](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Atom+Z3740+%40+1.33GHz)
 $ bench_cpu
 252.23 loops per nanosecond (39.65s user, 0.00s sys, 39.65s total)
 $ bench_mem
