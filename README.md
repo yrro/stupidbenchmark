@@ -118,6 +118,16 @@ $ bench_mem
 3.16 megabytes per microsecond (3.71s user, 17.06s sys, 20.77s total)
 ```
 
+### Dell Vostro 1520
+Intel(R) Core(TM)2 Duo CPU T6670 @ 2.20GHz
+[872](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core2+Duo+T6670+%40+2.20GHz&id=998)
+```sh
+$ ./bench_cpu 
+323.91 loops per nanosecond (30.87s user, 0.00s sys, 30.87s total)
+$ ./bench_mem 
+0.59 megabytes per microsecond (50.73s user, 60.54s sys, 111.27s total)
+```
+
 ### Dell OptiPlex 745
 Intel(R) Core(TM)2 CPU          6400  @ 2.13GHz
 [797](http://www.cpubenchmark.net/cpu.php?cpu=Intel+Core2+Duo+E6400+%40+2.13GHz)
