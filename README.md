@@ -141,6 +141,7 @@ $ bench_mem
 ```
 
 ### Dell Vostro 1520
+`dmi:bvnDellInc.:bvrA02:bd04/08/2009:svnDellInc.:pnVostro1520:pvrNull:rvnDellInc.:rn0T816J:rvr:cvnDellInc.:ct8:cvrN/A:`
 Intel(R) Core(TM)2 Duo CPU T6670 @ 2.20GHz
 [872](https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core2+Duo+T6670+%40+2.20GHz&id=998)
 ```sh
